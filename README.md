@@ -32,7 +32,7 @@ git clone -b noetic-devel https://github.com/ROBOTIS-GIT/turtlebot3_simulations
 git clone https://github.com/fazildgr8/ros_autonomous_slam.git
 git clone https://github.com/egnascimento/rma_project_01.git
 catkin build
-source /devel/setup.bash
+source devel/setup.bash
 ```
 Após estas etapas o ambiente está pronto pra ser executado. As linhas abaixo escolhem o modelo de robô a ser executado e na sequência executam o launch com todos os nodes necessários para preparar o ambiente e levar o robô do ponto de origem ao ponto de destino propostos no exercício.
 
