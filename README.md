@@ -53,6 +53,6 @@ O mapa de custos foi elaborado utilizando o Super Mega Bot por ter sido o robô 
 A estratégia que escolhida priorizou a simplicidade de implementação e a reutilização dos conceitos e ferramentas previamente experimentados durante as aulas. Sendo assim, a coordenação do robô até o destino é feita pelo 2D Nav Goal e a implementação cuida somente do envio das coordenadas destino para este node.
 
 ### Resultados obtidos
-O melhor resultado obtido até o momento é de um percurso do robô da origem até o destino de xx segundos. Existe oportunidade de otimização deste tempo através da alteração dos parâmetros do algoritmo de planejamento.
+O melhor resultado obtido até o momento é de um percurso do robô da origem até o destino de 261 segundos. Existe oportunidade de otimização deste tempo através da alteração dos parâmetros do algoritmo de planejamento como velocidade máxima bem como para uma estratégia de path planning que trace caminhos mais curtos mesmo que menos conservadores com relação ao desvio de obstáculos.
 
 
