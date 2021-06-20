@@ -16,6 +16,7 @@ source /opt/ros/noetic/setup.bash
 sudo apt-get update
 sudo apt-get install ros-noetic-turtlebot3-msgs
 sudo apt-get install ros-noetic-turtlebot3
+sudo apt-get install ros-noetic-dwa-local-planner
 ```
 
 Atenção, se o comando apt-get update ou qualquer um da instalação do ros-noetic retornar um erro de chaves, o comando abaixo deve resolver o problema.
