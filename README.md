@@ -42,6 +42,8 @@ export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH/home/ros/Workspaces/smb_ws/src/rma_p
 roslaunch rma_project_01 rma_project_01.launch
 ```
 
+Atenção: pode ser necessário editar o comando de export acima para refletir o caminho correto da sua pasta models dentro do projeto rma_project_01 que contém os modelos maze e grass_plane.
+
 Se todos os passos forem executados com sucesso, será possível observar algo similar ao vídeo abaixo:
 
 [![Vídeo do Projeto de Implementação 01](https://img.youtube.com/vi/bRPj9qMq97k/0.jpg)](https://www.youtube.com/watch?v=bRPj9qMq97k)
