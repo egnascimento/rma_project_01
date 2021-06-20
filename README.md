@@ -38,6 +38,7 @@ Após estas etapas o ambiente está pronto pra ser executado. As linhas abaixo e
 
 ```console
 export TURTLEBOT3_MODEL=burger
+export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH/home/ros/Workspaces/smb_ws/src/rma_project_01/models:
 roslaunch rma_project_01 rma_project_01.launch
 ```
 
