@@ -37,7 +37,7 @@ source devel/setup.bash
 Após estas etapas o ambiente está pronto pra ser executado. As linhas abaixo escolhem o modelo de robô a ser executado e na sequência executam o launch com todos os nodes necessários para preparar o ambiente e levar o robô do ponto de origem ao ponto de destino propostos no exercício.
 
 ```console
-export TURTLEBOT_MODEL=burger
+export TURTLEBOT3_MODEL=burger
 roslaunch rma_project_01 rma_project_01.launch
 ```
 
