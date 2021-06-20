@@ -35,7 +35,7 @@ roslaunch rma_project_01 rma_project_01.launch
 
 Se todos os passos forem executados com sucesso, será possível observar algo similar ao vídeo abaixo:
 
-[![Vídeo do Projeto de Implementação 01](https://img.youtube.com/vi/voMRHPNevOE/0.jpg)](https://www.youtube.com/watch?v=voMRHPNevOE)
+[![Vídeo do Projeto de Implementação 01](https://img.youtube.com/vi/bRPj9qMq97k/0.jpg)](https://www.youtube.com/watch?v=bRPj9qMq97k)
 
 ### Elaboração do mapa de custos
 O mapa de custos foi elaborado utilizando o Super Mega Bot por ter sido o robô originalmente pensado para este projeto. Seguem abaixo os passos para gerar o mapa do ambiente.
