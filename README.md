@@ -5,6 +5,7 @@ Este é o projeto de implementação 01 da disciplina Robôs Móveis Autônomos.
 
 ### Pré-requisitos
 Para executar este projeto é necessário que se tenha um ambiente com o ROS instalado. A Ubuntu na qual este projeto foi testado é o 20.04 com ROS noetic. Embora você possa criar este ambiente manualmente, recomenda-se também a utilização da máquina virtual fornecida pelo time do ETH por praticidade. As instruções para utilização desta máquina virtual estão em https://ethz.ch/content/dam/ethz/special-interest/mavt/robotics-n-intelligent-systems/rsl-dam/ROS2021/CoursePreparation_v3.pdf .
+É um pré-requisito também que se tenha conhecimentos básicos do ROS já que este passo a passo não será muito detalhado nas suas orientações presumindo que quem está seguindo saiba o básico dos conceitos de workspace bem como execução do catkin.
 
 ### Instalação
 Descrever aqui como instalar.
@@ -12,8 +13,15 @@ Descrever aqui como instalar.
 
 ```console
 source /opt/ros/noetic/setup.bash
+sudo apt-get update
 sudo apt-get install ros-noetic-turtlebot3-msgs
 sudo apt-get install ros-noetic-turtlebot3
+```
+
+Atenção, se o comando apt-get update ou qualquer um da instalação do ros-noetic retornar um erro de chaves, o comando abaixo deve resolver o problema.
+
+```console
+curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
 ```
 
 Em seguida, vá até a pasta src do seu workspace e digite os comandos abaixo.
