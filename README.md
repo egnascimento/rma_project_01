@@ -64,6 +64,11 @@ rosrun teleop_twist_keyboard teleop_twist_keyboard.py
 ```console
 rosrun map_server map_saver -f mapa
 ```
+5. Para ver o mapa gerado utilize o comando abaixo.
+```console
+eog mapa.pgm
+```
+
 
 ### Estratégia adotada
 A estratégia que escolhida priorizou a simplicidade de implementação e a reutilização dos conceitos e ferramentas previamente experimentados durante as aulas. Sendo assim, a coordenação do robô até o destino é feita pelo 2D Nav Goal e a implementação cuida somente do envio das coordenadas destino para este node.
