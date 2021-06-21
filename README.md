@@ -75,4 +75,11 @@ A estratégia que escolhida priorizou a simplicidade de implementação e a reut
 ### Resultados obtidos
 O melhor resultado obtido até o momento é de um percurso do robô da origem até o destino de 261 segundos. Em um segundo teste, aumentando os limites de velocidade de 0.26 para 10.26 no arquivo de configuração dwa_local_planner_params_waffle_pi.yaml, conseguiu-se percorrer o mesmo caminho em 125 segundos. Embora o limite tenha sido aleatoriamente aumentado para 10.26, a real intenção era retirar qualquer limite e notou-se através da observação do tópico cmd_vel que o máximo de velocidade utilizada pelo algoritmo em X linear foi de aproximadamente 0.6. Existe oportunidade de otimização deste tempo através da alteração dos parâmetros do algoritmo de planejamento como velocidade máxima bem como para uma estratégia de path planning que trace caminhos mais curtos mesmo que menos conservadores com relação ao desvio de obstáculos.
 
+O vídeo comparando os dois experimentos está disponível abaixo:
+
+[![Vídeo do Projeto de Implementação 01 comparando as duas configurações](https://img.youtube.com/vi/34Sy3uIgaSY/0.jpg)](https://youtu.be/34Sy3uIgaSY)
+
+
+
+
 
