@@ -8,8 +8,7 @@ Para executar este projeto é necessário que se tenha um ambiente com o ROS ins
 É um pré-requisito também que se tenha conhecimentos básicos do ROS já que este passo a passo não será muito detalhado nas suas orientações presumindo que quem está seguindo saiba o básico dos conceitos de workspace bem como execução do catkin.
 
 ### Instalação
-Descrever aqui como instalar.
-- Instalar o turtlebot3 executando os comandos abaixo:
+Instalar o turtlebot3 executando os comandos abaixo:
 
 ```console
 source /opt/ros/noetic/setup.bash
