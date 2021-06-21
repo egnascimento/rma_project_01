@@ -51,6 +51,19 @@ Se todos os passos forem executados com sucesso, será possível observar algo s
 
 ### Elaboração do mapa de custos
 O mapa de custos foi elaborado utilizando o Super Mega Bot por ter sido o robô originalmente pensado para este projeto. Seguem abaixo os passos para gerar o mapa do ambiente.
+1. Subir um ambiente com o robô e o mapa do labirinto. Este ambiente recomendado neste passo a passo deve ser suficiente embora neste trabalho tenha sido utilizado o smb_gazebo.
+2. Executar o comando abaixo para criação do mapa.
+```console
+rosrun gmapping slam_gmapping scan:=scan
+```
+3. Após execução bem sucedida deste comando, navegar por todo o labirinto. Alternativamente, você pode utilizar um algoritmo de exploração que faça com que o robô navegue aleatoriamente por todo o labirinto mas de forma a cobrir toda a sua extensão. Para conduzir manualmente o robô pelo labirinto, utilize o controle proporcionado pelo comando abaixo.
+```console
+rosrun teleop_twist_keyboard teleop_twist_keyboard.py
+```
+4. Ao final da varredura, executar o comando abaixo para produzir o mapa em formato de arquivo.
+```console
+rosrun map_server map_saver -f mapa
+```
 
 ### Estratégia adotada
 A estratégia que escolhida priorizou a simplicidade de implementação e a reutilização dos conceitos e ferramentas previamente experimentados durante as aulas. Sendo assim, a coordenação do robô até o destino é feita pelo 2D Nav Goal e a implementação cuida somente do envio das coordenadas destino para este node.
