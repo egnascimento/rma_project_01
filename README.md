@@ -37,7 +37,7 @@ source devel/setup.bash
 Após estas etapas o ambiente está pronto pra ser executado. As linhas abaixo escolhem o modelo de robô a ser executado e na sequência executam o launch com todos os nodes necessários para preparar o ambiente e levar o robô do ponto de origem ao ponto de destino propostos no exercício.
 
 ```console
-export TURTLEBOT3_MODEL=burger
+export TURTLEBOT3_MODEL=waffle_pi
 export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH/home/ros/Workspaces/smb_ws/src/rma_project_01/models:
 roslaunch rma_project_01 rma_project_01.launch
 ```
@@ -73,6 +73,6 @@ eog mapa.pgm
 A estratégia que escolhida priorizou a simplicidade de implementação e a reutilização dos conceitos e ferramentas previamente experimentados durante as aulas. Sendo assim, a coordenação do robô até o destino é feita pelo 2D Nav Goal e a implementação cuida somente do envio das coordenadas destino para este node.
 
 ### Resultados obtidos
-O melhor resultado obtido até o momento é de um percurso do robô da origem até o destino de 261 segundos. Existe oportunidade de otimização deste tempo através da alteração dos parâmetros do algoritmo de planejamento como velocidade máxima bem como para uma estratégia de path planning que trace caminhos mais curtos mesmo que menos conservadores com relação ao desvio de obstáculos.
+O melhor resultado obtido até o momento é de um percurso do robô da origem até o destino de 261 segundos. Em um segundo teste, aumentando os limites de velocidade de 0.26 para 10.26 no arquivo de configuração dwa_local_planner_params_waffle_pi.yaml, consegui-se percorrer o mesmo caminho em 125 segundos. Existe oportunidade de otimização deste tempo através da alteração dos parâmetros do algoritmo de planejamento como velocidade máxima bem como para uma estratégia de path planning que trace caminhos mais curtos mesmo que menos conservadores com relação ao desvio de obstáculos.
 
 
